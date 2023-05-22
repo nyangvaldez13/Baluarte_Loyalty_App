@@ -1,0 +1,10 @@
+^C:\XAMPP\HTDOCS\BALUARTE_LOYALTY_APP\BUILD\WINDOWS\CMAKEFILES\7DF9DA8B430CD49997C8FE82C7984866\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/xampp/htdocs/baluarte_loyalty_app/windows -BC:/xampp/htdocs/baluarte_loyalty_app/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/xampp/htdocs/baluarte_loyalty_app/build/windows/baluarte_loyalty_app.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
