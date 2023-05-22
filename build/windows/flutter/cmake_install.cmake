@@ -1,4 +1,4 @@
-# Install script for directory: C:/xampp/htdocs/baluarte_loyalty_app/windows/flutter
+# Install script for directory: C:/xampp/htdocs/Baluarte_Loyalty_App/windows/flutter
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

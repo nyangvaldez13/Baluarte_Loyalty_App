@@ -1,6 +1,6 @@
-^C:\XAMPP\HTDOCS\BALUARTE_LOYALTY_APP\BUILD\WINDOWS\CMAKEFILES\2A787DE0B978A53EFE8E5550B341B27C\FLUTTER_WINDOWS.DLL.RULE
+^C:\XAMPP\HTDOCS\BALUARTE_LOYALTY_APP\BUILD\WINDOWS\CMAKEFILES\F26591CE250D083ACD60EA067454A37F\FLUTTER_WINDOWS.DLL.RULE
 setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\xampp\htdocs\flutter PROJECT_DIR=C:\xampp\htdocs\baluarte_loyalty_app FLUTTER_ROOT=C:\xampp\htdocs\flutter FLUTTER_EPHEMERAL_DIR=C:\xampp\htdocs\baluarte_loyalty_app\windows\flutter\ephemeral PROJECT_DIR=C:\xampp\htdocs\baluarte_loyalty_app FLUTTER_TARGET=C:\xampp\htdocs\baluarte_loyalty_app\lib\baluarte_rewards\register_b.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=C:\xampp\htdocs\baluarte_loyalty_app\.dart_tool\package_config.json C:/xampp/htdocs/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E env FLUTTER_ROOT=C:\Users\Dran\Downloads\flutter_windows_3.10.1-stable\flutter PROJECT_DIR=C:\xampp\htdocs\Baluarte_Loyalty_App FLUTTER_ROOT=C:\Users\Dran\Downloads\flutter_windows_3.10.1-stable\flutter FLUTTER_EPHEMERAL_DIR=C:\xampp\htdocs\Baluarte_Loyalty_App\windows\flutter\ephemeral PROJECT_DIR=C:\xampp\htdocs\Baluarte_Loyalty_App FLUTTER_TARGET=C:\xampp\htdocs\Baluarte_Loyalty_App\lib\main.dart DART_DEFINES=RkxVVFRFUl9XRUJfQVVUT19ERVRFQ1Q9dHJ1ZQ==,RkxVVFRFUl9XRUJfQ0FOVkFTS0lUX1VSTD1odHRwczovL3d3dy5nc3RhdGljLmNvbS9mbHV0dGVyLWNhbnZhc2tpdC9iNGZiMTEyMTRkZDJkZGE2Y2UwMTJkZDk4ZWE0OThlOWU4YjkxMjYyLw== DART_OBFUSCATION=false TRACK_WIDGET_CREATION=true TREE_SHAKE_ICONS=false PACKAGE_CONFIG=C:\xampp\htdocs\Baluarte_Loyalty_App\.dart_tool\package_config.json C:/Users/Dran/Downloads/flutter_windows_3.10.1-stable/flutter/packages/flutter_tools/bin/tool_backend.bat windows-x64 Debug
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -8,7 +8,7 @@ endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
 exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
-^C:\XAMPP\HTDOCS\BALUARTE_LOYALTY_APP\BUILD\WINDOWS\CMAKEFILES\3B589ABE65AD6914B1A7D7AB1A33E7A9\FLUTTER_ASSEMBLE.RULE
+^C:\XAMPP\HTDOCS\BALUARTE_LOYALTY_APP\BUILD\WINDOWS\CMAKEFILES\B413FBF2DEE3AAC91F21400427056107\FLUTTER_ASSEMBLE.RULE
 setlocal
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
@@ -18,7 +18,7 @@ exit /b %1
 if %errorlevel% neq 0 goto :VCEnd
 ^C:\XAMPP\HTDOCS\BALUARTE_LOYALTY_APP\WINDOWS\FLUTTER\CMAKELISTS.TXT
 setlocal
-"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/xampp/htdocs/baluarte_loyalty_app/windows -BC:/xampp/htdocs/baluarte_loyalty_app/build/windows --check-stamp-file C:/xampp/htdocs/baluarte_loyalty_app/build/windows/flutter/CMakeFiles/generate.stamp
+"C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/xampp/htdocs/Baluarte_Loyalty_App/windows -BC:/xampp/htdocs/Baluarte_Loyalty_App/build/windows --check-stamp-file C:/xampp/htdocs/Baluarte_Loyalty_App/build/windows/flutter/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

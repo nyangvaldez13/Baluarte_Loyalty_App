@@ -2,10 +2,10 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\xampp\htdocs\baluarte_loyalty_app\build\windows\x64\Debug\ZERO_CHECK</FullPath>
+      <FullPath>C:\xampp\htdocs\Baluarte_Loyalty_App\build\windows\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\xampp\htdocs\baluarte_loyalty_app\build\windows\flutter\x64\Debug\flutter_assemble</FullPath>
+      <FullPath>C:\xampp\htdocs\Baluarte_Loyalty_App\build\windows\flutter\x64\Debug\flutter_assemble</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

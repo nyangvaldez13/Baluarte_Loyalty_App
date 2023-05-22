@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "202648299628",
+    "project_id": "baluarte-s-loyalty-app",
+    "storage_bucket": "baluarte-s-loyalty-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:202648299628:android:51810a1603814fbbe09049",
+        "android_client_info": {
+          "package_name": "com.example.baluarte_loyalty_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "202648299628-1pcugblj3540fpdvp2keocbo032rn60f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWddBTTDkKw68HYiA2TImttFcEcYmhUAA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "202648299628-1pcugblj3540fpdvp2keocbo032rn60f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
