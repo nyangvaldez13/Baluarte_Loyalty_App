@@ -1,3 +1,4 @@
+import 'package:flutter/services.dart';
 import 'package:flutter/material.dart';
 
 class StampPainter extends CustomPainter {
@@ -44,6 +45,10 @@ class LoyaltyPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>();
+
+    String loyaltyUser = 'John Doe';
+    String loyaltyCardNumber = '123456789';
+    String expirationDate = '05-31-2023';
 
     return Scaffold(
       key: scaffoldKey,
@@ -168,9 +173,84 @@ class LoyaltyPage extends StatelessWidget {
                         thickness: 3,
                       ),
                     ),
+                    SizedBox(height: 30),
+                    Container(
+                      padding: EdgeInsets.symmetric(horizontal: 12),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            'PROFILE',
+                            style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                              // Add any other desired styles
+                            ),
+                          ),
+                          SizedBox(height: 10),
+                          Row(
+                            children: [
+                              Text(
+                                'Loyalty User: ',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  // Add any other desired styles
+                                ),
+                              ),
+                              Text(
+                                loyaltyUser,
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  // Add any other desired styles
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 5),
+                          Row(
+                            children: [
+                              Text(
+                                'Loyalty Card Number: ',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  // Add any other desired styles
+                                ),
+                              ),
+                              Text(
+                                loyaltyCardNumber,
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  // Add any other desired styles
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(height: 5), // Add margin between data
+
+                          Row(
+                            children: [
+                              Text(
+                                'Expiration Date: ',
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  // Add any other desired styles
+                                ),
+                              ),
+                              Text(
+                                expirationDate,
+                                style: TextStyle(
+                                  fontSize: 16,
+                                  // Add any other desired styles
+                                ),
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
                     /*Column(
                       children: [*/
-                    SizedBox(height: 16),
+                    SizedBox(height: 8),
                     Container(
                       height: 200, // Set the desired height
                       margin: EdgeInsets.all(16.0), // Set the desired margin
@@ -246,7 +326,113 @@ class LoyaltyPage extends StatelessWidget {
                           ],
                         ),
                       ),
-                    )
+                    ),
+                    SizedBox(height: 15),
+                    Container(
+                      margin: EdgeInsets.symmetric(vertical: 16.0),
+                      padding: EdgeInsets.symmetric(horizontal: 12),
+                      child: Row(
+                        children: [
+                          Expanded(
+                            child: Text(
+                              'Refer a friend',
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    Container(
+                      margin:
+                          EdgeInsets.all(16.0), // Adjust the margin as needed
+                      child: Card(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(8.0),
+                          // Add border color and width
+                          side: BorderSide(color: Colors.grey, width: 1.0),
+                        ),
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(20.0),
+                              child: Row(
+                                children: [
+                                  SizedBox(
+                                      width:
+                                          16.0), // Add spacing between image and content
+                                  // Right Content
+                                  Expanded(
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        SizedBox(
+                                            height:
+                                                8.0), // Add spacing between title and description
+                                        Text(
+                                          'Share your code, and your card will be marked as 1 visit for every 5 of your friends that marks their first visit.',
+                                          style: TextStyle(fontSize: 16.0),
+                                        ),
+                                        SizedBox(
+                                            height:
+                                                8.0), // Add spacing between description and button
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              height: 60,
+                              margin: EdgeInsets.all(15.0),
+                              child: Card(
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8.0),
+                                  side: BorderSide(
+                                      color: Colors.grey, width: 1.0),
+                                ),
+                                child: Column(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.all(4.0),
+                                      child: Row(
+                                        children: [
+                                          Expanded(
+                                            child: Text(
+                                              'ABC123', // Replace with your code
+                                              style: TextStyle(fontSize: 14.0),
+                                            ),
+                                          ),
+                                          IconButton(
+                                            icon: Icon(Icons.copy),
+                                            iconSize: 16,
+                                            onPressed: () {
+                                              String code =
+                                                  'ABC123'; // Replace with your code
+                                              Clipboard.setData(
+                                                  ClipboardData(text: code));
+                                              final snackBar = SnackBar(
+                                                content: Text(
+                                                    'Code copied to clipboard'),
+                                              );
+                                              ScaffoldMessenger.of(context)
+                                                  .showSnackBar(snackBar);
+                                            },
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
