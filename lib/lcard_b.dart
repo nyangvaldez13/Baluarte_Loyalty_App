@@ -1,5 +1,6 @@
 import 'package:baluarte_loyalty_app/baluarte_loyalty/loyalty_b.dart';
 import 'package:baluarte_loyalty_app/lcardref_b.dart';
+import 'package:baluarte_loyalty_app/setupacc_b.dart';
 import 'package:flutter/material.dart';
 
 class LcardPage extends StatelessWidget {
@@ -12,33 +13,14 @@ class LcardPage extends StatelessWidget {
     return Scaffold(
       key: scaffoldKey,
       appBar: AppBar(
-        //title: const Text('Baluarte Rewards'),
         leading: IconButton(
-          icon: const Icon(Icons.menu),
+          icon: Icon(Icons.arrow_back),
           onPressed: () {
-            scaffoldKey.currentState?.openDrawer();
+            Navigator.pop(context);
           },
         ),
       ),
-      drawer: Drawer(
-          child: Container(
-        margin: EdgeInsets.only(top: 40),
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: [
-            ListTile(
-              leading: Icon(Icons.account_circle),
-              title: Text('Sign in'),
-              onTap: () {},
-            ),
-            ListTile(
-              leading: Icon(Icons.stars),
-              title: Text('Rewards'),
-              onTap: () {},
-            ),
-          ],
-        ),
-      )),
+      
       body: SingleChildScrollView(
         child: Container(
           padding: EdgeInsets.symmetric(horizontal: 20, vertical: 40),
@@ -152,7 +134,7 @@ class LcardPage extends StatelessWidget {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => LcardRefPage()),
+                                  builder: (context) => SetupAccPage()),
                             );
                           },
                           child: Text(

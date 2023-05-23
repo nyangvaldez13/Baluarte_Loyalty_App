@@ -1,7 +1,7 @@
 import 'package:baluarte_loyalty_app/baluarte_rewards/redeem_b.dart';
 import 'package:flutter/material.dart';
 import 'dart:ui';
-
+import '../home_b.dart';
 class ExclusivesPage extends StatefulWidget {
   const ExclusivesPage({Key? key}) : super(key: key);
 
@@ -33,12 +33,28 @@ class _ExclusivesPageState extends State<ExclusivesPage> {
           child: ListView(
             padding: EdgeInsets.zero,
             children: [
+              GestureDetector(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => HomePage(),
+                  ),
+                );
+              },
+              child: Container(
+                padding: EdgeInsets.symmetric(vertical: 16, horizontal: 20),
+                child: Text(
+                  'Log out',
+                  style: TextStyle(
+                    color: Colors.blue,
+                    fontSize: 16,
+                  ),
+                ),
+              ),
+            ),
               ListTile(
                 title: Text('Account Settings'),
-                onTap: () {},
-              ),
-              ListTile(
-                title: Text('Log out'),
                 onTap: () {},
               ),
             ],
